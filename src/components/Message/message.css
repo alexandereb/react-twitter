@@ -1,0 +1,46 @@
+.root {
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.displayName {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.usermame {
+  color: #AAA;
+}
+
+.date {
+  padding: 10px;
+  font-size: 12;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  color: #AAA;
+}
+
+.icon {
+  margin-right: 13px;
+}

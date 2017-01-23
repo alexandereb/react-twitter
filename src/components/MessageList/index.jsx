@@ -1,20 +1,27 @@
-import React from "react"
-import Message from "../Message"
+import React, {Component} from 'react'
+import Message from '../Message'
 
-class MessageList extends React.Component {
-  constructor(props) {
+class MessageList extends Component {
+  constructor (props) {
     super(props)
   }
 
-  render() {
+  render () {
     return (
-      <ul>
+      <div>
         {this.props.messages.map(message => {
           return (
-            <Message text={message.text}/>
+            <Message
+              text={message.text}
+              avatar={message.avatar}
+              displayName={message.displayName}
+              username={message.username}
+              date={message.date}
+
+            />
           )
         })}
-      </ul>
+      </div>
     )
   }
 }
