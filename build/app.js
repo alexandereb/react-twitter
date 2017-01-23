@@ -21541,7 +21541,8 @@
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        _react2.default.createElement(_Header2.default, null)
+	        _react2.default.createElement(_Header2.default, null),
+	        _react2.default.createElement(_Main2.default, null)
 	      );
 	    }
 	  }]);
@@ -22023,7 +22024,7 @@
 /* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -22057,10 +22058,11 @@
 	  }
 
 	  _createClass(MessageList, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
+	      console.log("sadasdsa", props);
 	      return _react2.default.createElement(
-	        "ul",
+	        'div',
 	        null,
 	        this.props.messages.map(function (message) {
 	          return _react2.default.createElement(_Message2.default, {
@@ -22113,8 +22115,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Message = function (_React$Compoment) {
-	  _inherits(Message, _React$Compoment);
+	var Message = function (_React$Component) {
+	  _inherits(Message, _React$Component);
 
 	  function Message(props) {
 	    _classCallCheck(this, Message);
@@ -22193,7 +22195,7 @@
 	  }]);
 
 	  return Message;
-	}(_react2.default.Compoment);
+	}(_react2.default.Component);
 
 	exports.default = Message;
 

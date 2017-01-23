@@ -19,6 +19,7 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
+  border: 1px solid #CCC;
 }
 
 .displayName {

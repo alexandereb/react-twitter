@@ -7,6 +7,7 @@ class MessageList extends Component {
   }
 
   render () {
+    console.log("sadasdsssssssssssa",this.props)
     return (
       <div>
         {this.props.messages.map(message => {
