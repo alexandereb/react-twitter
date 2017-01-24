@@ -1,13 +1,26 @@
 import React from "react"
+import 'normalize-css'
+
+import styles from './app.css'
 import Header from "../Header"
 import Main from "../Main"
 
 class App extends React.Component {
+  constructor () {
+    super()
+    this.state = {
+      user: {
+        photoURL: "https://pbs.twimg.com/profile_images/697498449751707648/RCF0dAHw_400x400.jpg",
+        email: "alexeb.dev@gmail.com",
+        onOpenText: false
+      }
+    }
+  }
   render () {
     return (
       <div>
         <Header />
-        <Main />
+        <Main user={this.state.user} />
       </div>
     )
   }

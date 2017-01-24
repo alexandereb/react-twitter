@@ -8,8 +8,9 @@ class Message extends React.Component {
   }
 
   render () {
+    moment.locale("es")
     let dateFormat = moment(this.props.date).fromNow()
-    console.log("sadasdsa",this.props)
+    
     return (
       <div className={styles.root}>
         <div className={styles.user}>
