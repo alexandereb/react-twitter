@@ -22499,7 +22499,7 @@
 	    value: function render() {
 	      _moment2.default.locale("es");
 	      var dateFormat = (0, _moment2.default)(this.props.date).fromNow();
-	      console.log("sadasdsa", this.props);
+
 	      return _react2.default.createElement(
 	        'div',
 	        { className: _message2.default.root },
